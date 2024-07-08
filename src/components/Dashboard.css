@@ -1,0 +1,119 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+    margin-bottom: 30px;
+  }
+  
+  .menu-item {
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .user-greeting {
+    font-size: 18px;
+    color: #6c63ff;
+  }
+  
+  .stats-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .stat-card h3 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .stat-card p {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  .detection-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .detection-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .dropzone {
+    border: 2px dashed #6c63ff;
+    padding: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #6c63ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropzone p {
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #5a54e3;
+  }
+  

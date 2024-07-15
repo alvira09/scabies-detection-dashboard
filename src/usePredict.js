@@ -9,7 +9,7 @@ function usePredict() {
 
             console.log(formData);
             
-            return axios.post("http://localhost:5000/upload", formData, {
+            return axios.post('http://143.198.196.18:5000/predict', formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
@@ -19,7 +19,7 @@ function usePredict() {
             alert(`hasil prediksi : ${res.data.message}`)
         },
         onError: () => {
-            alert("ERROR");
+            alert("ERORRR");
         }
     });
 

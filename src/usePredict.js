@@ -5,18 +5,18 @@ function usePredict() {
     const mutation = useMutation({
         mutationFn: (data) => {
             const formData = new FormData();
-            formData.append("file", data);
+            formData.append("image", data); // Changed "file" to "image"
 
-            console.log(formData);
+            console.log(formData.get('image')); // Changed "file" to "image"
             
             return axios.post('http://143.198.196.18:5000/predict', formData, {
                 headers: {
-                    "Content-Type": "multipart/form-data",
-                },
+                    'Content-Type': 'multipart/form-data'
+                }
             });
         },
         onSuccess: (res) => {
-            alert(`hasil prediksi : ${res.data.message}`)
+            alert(`hasil prediksi : ${res.data.predicted_label}`)
         },
         onError: () => {
             alert("ERORRR");
